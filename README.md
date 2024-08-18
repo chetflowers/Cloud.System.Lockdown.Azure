@@ -1,4 +1,4 @@
-# Secure-Cloud-Infrastructure-Deployment-Project
+# Secure-Cloud-Infrastructure-Deployment
 Project Description: Cloud Infrastructure for XCorp Red Team
 
 Introduction:
