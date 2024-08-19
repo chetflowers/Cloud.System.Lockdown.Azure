@@ -1,17 +1,21 @@
 # Secure-Cloud-Infrastructure-Deployment
-Project Description: Cloud Infrastructure for XCorp Red Team
+Project Description: Azure-Based Cloud Infrastructure for XCorp Red Team
 
-Introduction:
-This project aims to create a highly available web server infrastructure on Azure for XCorp’s Red Team, facilitating testing and training activities.
+Introduction
+This project focuses on building a highly available and secure cloud infrastructure on Azure for XCorp’s Red Team to conduct testing and training activities. The environment is designed with redundancy, load balancing, and automation to ensure efficient and reliable operations.
 
-Cloud Setup Overview:
-The cloud setup includes an Azure Resource Group that houses a Virtual Network (VNet) with specified IP address ranges and subnets. Within this environment, multiple Virtual Machines (VMs) are deployed to host Damn Vulnerable Web Application (DVWA), ensuring redundancy and load balancing.
+Cloud Setup Overview
+- Azure Resource Group: Contains all infrastructure components, including a Virtual Network (VNet) with defined IP address ranges and subnets.
+- Virtual Machines (VMs): Deployed to host multiple instances of Damn Vulnerable Web Application (DVWA) across either two or three VMs for high availability.
+- Ansible Jump Box: Used for centralized management and automated configuration across all VMs via Ansible playbooks.
 
-Components and Functionality:
-The infrastructure leverages Docker containers deployed on each VM to encapsulate and manage DVWA instances efficiently. Ansible automation is integrated through an Ansible Jump Box, streamlining configuration management across the infrastructure.
+Components and Functionality
+- Docker Containers: Each VM runs DVWA encapsulated in Docker containers for easy deployment and management.
+- Load Balancer: Distributes incoming HTTP traffic evenly across the DVWA instances, ensuring consistent performance and availability.
 
-Traffic and Security:
-Traffic management is handled by a Load Balancer, directing HTTP requests to the DVWA instances. Strict security measures are implemented using configured security groups to control SSH access, ensuring secure administrative interactions within the environment.
+Traffic and Security
+- Load Balancer: Manages traffic routing while maintaining redundancy across VMs.
+- Security Groups: Configured to restrict access and control SSH traffic, ensuring secure interactions with the infrastructure.
 
-Conclusion and Significance:
-In summary, this project establishes a robust, scalable web server infrastructure that enhances XCorp’s capabilities for testing and training scenarios. By incorporating Docker for containerization and Ansible for automation, the solution ensures operational efficiency and flexibility in managing the cloud environment.
+Conclusion and Significance
+This project delivers a scalable and secure cloud environment for XCorp’s Red Team, optimizing testing and training workflows. By utilizing Docker for containerization and Ansible for automated management, the setup guarantees operational flexibility and resilience, crucial for maintaining a reliable testing infrastructure.
