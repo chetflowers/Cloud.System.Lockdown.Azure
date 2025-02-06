@@ -31,6 +31,6 @@ In this project, we create a robust Azure-based environment tailored for cyberse
 ## Conclusion and Significance
 This project delivers a scalable and secure cloud environment for XCorp’s Red Team, optimizing testing and training workflows. By utilizing Docker for containerization and Ansible for automated management, the setup guarantees operational flexibility and resilience—crucial for maintaining a reliable testing infrastructure.
 
-## Screenshots
-![Cloud Security Diagram](CHET%20FLOWERS_CLOUD%20SECURITY.png)  
+## Diagram
+![Cloud Security Diagram](CHET_FLOWERS_CLOUD_SECURITY.png) 
 *Figure: Overview of the secure cloud infrastructure design.*
